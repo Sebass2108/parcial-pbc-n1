@@ -1,9 +1,14 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-editar-perfil',
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './editar-perfil.html',
   styleUrl: './editar-perfil.css',
 })
-export class EditarPerfil {}
+export class EditarPerfil {
+  apodo = 'Sebas';
+  lenguaje = 'Java';
+  color = '#2e86de';
+}
